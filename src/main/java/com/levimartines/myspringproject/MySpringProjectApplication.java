@@ -22,7 +22,7 @@ public class MySpringProjectApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        User user = new User(null, "levi", "levi@gmail.com", pe.encode("1234"));
+        User user = new User(null, "admin", "admin@admin.com", pe.encode("admin"));
         repository.save(user);
     }
 }
