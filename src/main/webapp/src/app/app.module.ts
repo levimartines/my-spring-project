@@ -11,6 +11,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {AuthenticationService} from "./services/authentication.service";
 import {HttpClientModule} from "@angular/common/http";
 import {JwtModule} from "@auth0/angular-jwt";
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTabsModule } from '@angular/material/tabs';
 
 export function tokenGetter() {
   return localStorage.getItem("access_token");
@@ -31,8 +33,10 @@ export function tokenGetter() {
     FormsModule,
     ReactiveFormsModule,
     JwtModule.forRoot({
-      config: {tokenGetter: tokenGetter}
+      config: { tokenGetter: tokenGetter },
     }),
+    MatSidenavModule,
+    MatTabsModule,
   ],
   providers: [
     AuthenticationService

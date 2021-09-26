@@ -7,6 +7,6 @@ html, body {
 
 body {
   margin: 0;
-  background-image: url("assets/background.jpeg");
+  /*background-image: url("assets/background.jpeg");*/
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
